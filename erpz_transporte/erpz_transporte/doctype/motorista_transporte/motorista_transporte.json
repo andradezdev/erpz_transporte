@@ -1,0 +1,67 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:cpf",
+    "creation": "2026-09-16 12:00:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "nome_motorista",
+        "cpf",
+        "cnh",
+        "categoria_cnh",
+        "celular"
+    ],
+    "fields": [
+        {
+            "fieldname": "nome_motorista",
+            "fieldtype": "Data",
+            "label": "Nome do Motorista",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "cpf",
+            "fieldtype": "Data",
+            "label": "CPF (apenas números)",
+            "reqd": 1,
+            "unique": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "cnh",
+            "fieldtype": "Data",
+            "label": "Número da CNH",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "categoria_cnh",
+            "fieldtype": "Select",
+            "label": "Categoria CNH",
+            "options": "C\nD\nE",
+            "default": "E"
+        },
+        {
+            "fieldname": "celular",
+            "fieldtype": "Data",
+            "label": "Telefone / Celular"
+        }
+    ],
+    "modified": "2026-09-16 12:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "ERPZ Transporte",
+    "name": "Motorista Transporte",
+    "naming_rule": "By fieldname",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+}

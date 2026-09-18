@@ -1,0 +1,16 @@
+{
+    "app": "erpz_transporte",
+    "doctype": "Desktop Icon",
+    "hidden": 0,
+    "icon": "truck",
+    "icon_type": "Link",
+    "idx": 10,
+    "label": "ERPZ Transporte",
+    "link_to": "ERPZ Transporte",
+    "link_type": "Workspace Sidebar",
+    "name": "ERPZ Transporte",
+    "parent_icon": "",
+    "restrict_removal": 0,
+    "roles": [],
+    "standard": 1
+}

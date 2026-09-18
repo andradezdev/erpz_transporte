@@ -1,0 +1,19 @@
+[project]
+name = "erpz_transporte"
+authors = [
+    { name = "ERPZ", email = "dev@erpz.io"}
+]
+description = "ERPZ Transporte - TMS, Conhecimento de Transporte Eletrônico (CT-e 4.0), MDF-e 3.0a, DACTE e DAMDFE"
+requires-python = ">=3.12"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    "nfelib>=2.5.0",
+    "erpbrasil.base>=2.4.0",
+    "erpbrasil.edoc>=3.1.0",
+    "brazilfiscalreport>=1.0.0"
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"

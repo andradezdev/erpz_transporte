@@ -1,0 +1,112 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:placa",
+    "creation": "2026-09-16 12:00:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "placa",
+        "uf_veiculo",
+        "rntrc",
+        "renavam",
+        "column_break_veic",
+        "marca_modelo",
+        "tipo_rodado",
+        "tipo_carroceria",
+        "tara_kg",
+        "capacidade_kg",
+        "capacidade_m3",
+        "proprietario"
+    ],
+    "fields": [
+        {
+            "fieldname": "placa",
+            "fieldtype": "Data",
+            "label": "Placa do Veículo",
+            "reqd": 1,
+            "unique": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "uf_veiculo",
+            "fieldtype": "Data",
+            "label": "UF",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "rntrc",
+            "fieldtype": "Data",
+            "label": "RNTRC (ANTT)",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "renavam",
+            "fieldtype": "Data",
+            "label": "RENAVAM"
+        },
+        {
+            "fieldname": "column_break_veic",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "marca_modelo",
+            "fieldtype": "Data",
+            "label": "Marca / Modelo",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "tipo_rodado",
+            "fieldtype": "Select",
+            "label": "Tipo Rodado",
+            "options": "Truck\nToco\nCavalo Mecânico\nVan\nCarreta",
+            "default": "Truck"
+        },
+        {
+            "fieldname": "tipo_carroceria",
+            "fieldtype": "Select",
+            "label": "Tipo Carroceria",
+            "options": "Aberta\nFechada/Baú\nSider\nFrigorífica\nTanque",
+            "default": "Fechada/Baú"
+        },
+        {
+            "fieldname": "tara_kg",
+            "fieldtype": "Float",
+            "label": "Tara (kg)"
+        },
+        {
+            "fieldname": "capacidade_kg",
+            "fieldtype": "Float",
+            "label": "Capacidade Carga (kg)"
+        },
+        {
+            "fieldname": "capacidade_m3",
+            "fieldtype": "Float",
+            "label": "Capacidade (m³)"
+        },
+        {
+            "fieldname": "proprietario",
+            "fieldtype": "Select",
+            "label": "Proprietário",
+            "options": "Próprio\nTerceiro",
+            "default": "Próprio"
+        }
+    ],
+    "modified": "2026-09-16 12:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "ERPZ Transporte",
+    "name": "Veiculo Transporte",
+    "naming_rule": "By fieldname",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+}

@@ -1,0 +1,260 @@
+{
+    "actions": [],
+    "allow_rename": 0,
+    "autoname": "format:CTE-{YYYY}-{#####}",
+    "creation": "2026-09-16 12:00:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "section_id",
+        "naming_series",
+        "modelo_fiscal",
+        "empresa",
+        "numero_cte",
+        "serie",
+        "column_break_id",
+        "modal",
+        "tipo_servico",
+        "status",
+        "data_emissao",
+        "section_partes",
+        "remetente",
+        "destinatario",
+        "tomador_servico",
+        "section_transporte",
+        "veiculo",
+        "motorista",
+        "rntrc_empresa",
+        "section_valores",
+        "valor_total_servico",
+        "valor_receber",
+        "peso_total_kg",
+        "quantidade_volumes",
+        "section_sefaz",
+        "chave_acesso",
+        "protocolo",
+        "data_autorizacao",
+        "mensagem_sefaz",
+        "section_xml",
+        "xml_autorizado"
+    ],
+    "fields": [
+        {
+            "fieldname": "section_id",
+            "fieldtype": "Section Break",
+            "label": "Identificação do CT-e"
+        },
+        {
+            "default": "CTE-.YYYY.-.#####",
+            "fieldname": "naming_series",
+            "fieldtype": "Select",
+            "hidden": 1,
+            "label": "Série",
+            "options": "CTE-.YYYY.-.#####"
+        },
+        {
+            "fieldname": "modelo_fiscal",
+            "fieldtype": "Data",
+            "label": "Modelo Fiscal",
+            "default": "57 - CT-e",
+            "read_only": 1
+        },
+        {
+            "fieldname": "empresa",
+            "fieldtype": "Link",
+            "label": "Empresa Emitente",
+            "options": "Company",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "numero_cte",
+            "fieldtype": "Int",
+            "label": "Número CT-e",
+            "read_only": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "serie",
+            "fieldtype": "Int",
+            "label": "Série",
+            "default": 1,
+            "read_only": 1
+        },
+        {
+            "fieldname": "column_break_id",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "modal",
+            "fieldtype": "Select",
+            "label": "Modal",
+            "options": "01 - Rodoviário\n02 - Aéreo\n03 - Aquaviário",
+            "default": "01 - Rodoviário",
+            "reqd": 1
+        },
+        {
+            "fieldname": "tipo_servico",
+            "fieldtype": "Select",
+            "label": "Tipo Serviço",
+            "options": "0 - Normal\n1 - Subcontratação\n2 - Redespacho",
+            "default": "0 - Normal"
+        },
+        {
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "label": "Status",
+            "options": "Rascunho\nAutorizado\nCancelado\nRejeitado",
+            "default": "Rascunho",
+            "read_only": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "data_emissao",
+            "fieldtype": "Datetime",
+            "label": "Data Emissão"
+        },
+        {
+            "fieldname": "section_partes",
+            "fieldtype": "Section Break",
+            "label": "Envolvidos no Transporte"
+        },
+        {
+            "fieldname": "remetente",
+            "fieldtype": "Link",
+            "label": "Remetente",
+            "options": "Customer",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "destinatario",
+            "fieldtype": "Link",
+            "label": "Destinatério",
+            "options": "Customer",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "tomador_servico",
+            "fieldtype": "Select",
+            "label": "Tomador do Frete",
+            "options": "Remetente\nDestinatério\nTerceiros",
+            "default": "Remetente"
+        },
+        {
+            "fieldname": "section_transporte",
+            "fieldtype": "Section Break",
+            "label": "Dados do Veículo e Motorista"
+        },
+        {
+            "fieldname": "veiculo",
+            "fieldtype": "Link",
+            "label": "Veículo",
+            "options": "Veiculo Transporte",
+            "reqd": 1
+        },
+        {
+            "fieldname": "motorista",
+            "fieldtype": "Link",
+            "label": "Motorista",
+            "options": "Motorista Transporte",
+            "reqd": 1
+        },
+        {
+            "fieldname": "rntrc_empresa",
+            "fieldtype": "Data",
+            "label": "RNTRC da Empresa"
+        },
+        {
+            "fieldname": "section_valores",
+            "fieldtype": "Section Break",
+            "label": "Valores da Carga e Frete"
+        },
+        {
+            "fieldname": "valor_total_servico",
+            "fieldtype": "Currency",
+            "label": "Valor Total do Frete",
+            "default": 0,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "valor_receber",
+            "fieldtype": "Currency",
+            "label": "Valor a Receber",
+            "default": 0
+        },
+        {
+            "fieldname": "peso_total_kg",
+            "fieldtype": "Float",
+            "label": "Peso Total da Carga (kg)",
+            "precision": "3",
+            "default": 0
+        },
+        {
+            "fieldname": "quantidade_volumes",
+            "fieldtype": "Float",
+            "label": "Volumes",
+            "default": 1
+        },
+        {
+            "fieldname": "section_sefaz",
+            "fieldtype": "Section Break",
+            "label": "Retorno SEFAZ"
+        },
+        {
+            "fieldname": "chave_acesso",
+            "fieldtype": "Data",
+            "label": "Chave de Acesso CT-e",
+            "read_only": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "protocolo",
+            "fieldtype": "Data",
+            "label": "Protocolo",
+            "read_only": 1
+        },
+        {
+            "fieldname": "data_autorizacao",
+            "fieldtype": "Datetime",
+            "label": "Data Autorização",
+            "read_only": 1
+        },
+        {
+            "fieldname": "mensagem_sefaz",
+            "fieldtype": "Small Text",
+            "label": "Mensagem SEFAZ",
+            "read_only": 1
+        },
+        {
+            "fieldname": "section_xml",
+            "fieldtype": "Section Break",
+            "label": "XML Autorizado",
+            "collapsible": 1
+        },
+        {
+            "fieldname": "xml_autorizado",
+            "fieldtype": "Long Text",
+            "label": "XML",
+            "read_only": 1
+        }
+    ],
+    "modified": "2026-09-16 12:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "ERPZ Transporte",
+    "name": "Conhecimento de Transporte",
+    "naming_rule": "Expression",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ],
+    "track_changes": 1
+}

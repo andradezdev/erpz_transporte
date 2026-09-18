@@ -1,0 +1,119 @@
+{
+ "app": "erpz_transporte",
+ "charts": [],
+ "content": "[{\"id\": \"h_sc\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Atalhos R\\u00e1pidos</b></span>\", \"col\": 12}}, {\"id\": \"sc_cte\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"CT-e 4.0\", \"col\": 3}}, {\"id\": \"sc_mdfe\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"MDF-e 3.0a\", \"col\": 3}}, {\"id\": \"sc_veic\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Ve\\u00edculos\", \"col\": 3}}, {\"id\": \"sc_mot\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Motoristas\", \"col\": 3}}, {\"id\": \"sp_1\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"h_cards\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>M\\u00f3dulos e Opera\\u00e7\\u00f5es</b></span>\", \"col\": 12}}, {\"id\": \"card_doc\", \"type\": \"card\", \"data\": {\"card_name\": \"Documentos Fiscais de Transporte\", \"col\": 6}}, {\"id\": \"card_frota\", \"type\": \"card\", \"data\": {\"card_name\": \"Cadastros e Frota\", \"col\": 6}}]",
+ "creation": "2026-09-16 17:38:32.853141",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "truck",
+ "idx": 0,
+ "indicator_color": "blue",
+ "is_hidden": 0,
+ "label": "ERPZ Transporte",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Documentos Fiscais de Transporte",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Conhecimento de Transporte Eletr\u00f4nico (CT-e 4.0)",
+   "link_count": 0,
+   "link_to": "Conhecimento de Transporte",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Manifesto Eletr\u00f4nico de Documentos (MDF-e 3.0a)",
+   "link_count": 0,
+   "link_to": "Manifesto Eletronico Documentos",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cadastros e Frota",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Ve\u00edculos de Carga (ANTT/RNTRC)",
+   "link_count": 0,
+   "link_to": "Veiculo Transporte",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Motoristas e Condutores (CNH)",
+   "link_count": 0,
+   "link_to": "Motorista Transporte",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-09-16 17:49:55.439935",
+ "modified_by": "Administrator",
+ "module": "ERPZ Transporte",
+ "name": "ERPZ Transporte",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "CT-e 4.0",
+   "link_to": "Conhecimento de Transporte",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "MDF-e 3.0a",
+   "link_to": "Manifesto Eletronico Documentos",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "label": "Ve\u00edculos",
+   "link_to": "Veiculo Transporte",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Motoristas",
+   "link_to": "Motorista Transporte",
+   "type": "DocType"
+  }
+ ],
+ "title": "ERPZ Transporte",
+ "type": "Workspace"
+}

@@ -1,0 +1,98 @@
+{
+ "app": "erpz_transporte",
+ "creation": "2026-09-16 17:38:32.901969",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "truck",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "home",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Home",
+   "link_to": "ERPZ Transporte",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "file-text",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Documentos Fiscais de Carga",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Section Break"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "file",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Conhecimento de Transporte (CT-e)",
+   "link_to": "Conhecimento de Transporte",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "file-text",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Manifesto Eletr\u00f4nico (MDF-e)",
+   "link_to": "Manifesto Eletronico Documentos",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "truck",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Cadastros de Frota",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Section Break"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "truck",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Ve\u00edculos de Transporte",
+   "link_to": "Veiculo Transporte",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "users",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Motoristas de Transporte",
+   "link_to": "Motorista Transporte",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-09-16 17:38:32.901969",
+ "modified_by": "Administrator",
+ "name": "ERPZ Transporte",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "ERPZ Transporte"
+}
