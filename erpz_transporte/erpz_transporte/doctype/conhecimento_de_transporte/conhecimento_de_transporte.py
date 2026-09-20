@@ -278,3 +278,14 @@ class ConhecimentodeTransporte(Document):
         frappe.local.response["filename"] = f"DACTE_{self.numero_cte or self.name}.pdf"
         frappe.local.response["filecontent"] = buffer.getvalue()
         frappe.local.response["type"] = "download"
+
+
+@frappe.whitelist()
+def baixar_dacte_pdf(docname=None, cte=None):
+    """Gera e faz o download direto do DACTE em PDF"""
+    name = docname or cte or frappe.form_dict.get("docname") or frappe.form_dict.get("cte")
+    if not name:
+        frappe.throw(_("Conhecimento de Transporte não informado."))
+
+    cte_doc = frappe.get_doc("Conhecimento de Transporte", name)
+    return cte_doc.baixar_dacte_pdf()

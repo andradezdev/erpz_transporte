@@ -138,3 +138,14 @@ class ManifestoEletronicoDocumentos(Document):
         frappe.local.response["filename"] = f"DAMDFE_{self.numero_mdfe or self.name}.pdf"
         frappe.local.response["filecontent"] = buffer.getvalue()
         frappe.local.response["type"] = "download"
+
+
+@frappe.whitelist()
+def baixar_damdfe_pdf(docname=None, mdfe=None):
+    """Gera e faz o download direto do DAMDFE em PDF"""
+    name = docname or mdfe or frappe.form_dict.get("docname") or frappe.form_dict.get("mdfe")
+    if not name:
+        frappe.throw(_("Manifesto Eletrônico não informado."))
+
+    mdfe_doc = frappe.get_doc("Manifesto Eletronico Documentos", name)
+    return mdfe_doc.baixar_damdfe_pdf()
